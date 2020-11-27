@@ -1,16 +1,12 @@
-import com.github.javafaker.Faker;
-import com.github.javafaker.service.FakeValuesService;
-import com.github.javafaker.service.RandomService;
+package com.scripts;
+
 import io.restassured.http.Method;
 import io.restassured.specification.RequestSpecification;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-
-import java.util.Locale;
+import com.auth.*;
 
 public class PostCollections {
     @Test
