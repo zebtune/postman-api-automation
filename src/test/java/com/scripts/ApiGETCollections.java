@@ -9,6 +9,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import com.auth.*;
 
+import java.io.IOException;
+
 public class ApiGETCollections {
     int statusCode;
     String collectionId = "1f361abf-49c1-4765-a3f9-bf1addc64615";
@@ -23,7 +25,7 @@ public class ApiGETCollections {
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")
-                .header(ApiKey.key, ApiKey.value)
+                .header(ApiKey.keyName, ApiKey.keyValue)
                 .request(Method.GET);
 
         statusCode = response.getStatusCode();
@@ -38,7 +40,7 @@ public class ApiGETCollections {
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")
-                .header(ApiKey.key, ApiKey.value)
+                .header(ApiKey.keyName, ApiKey.keyValue)
                 .request(Method.GET, collectionId);
 
         statusCode = response.getStatusCode();
