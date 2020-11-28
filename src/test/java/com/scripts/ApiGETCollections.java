@@ -15,7 +15,7 @@ public class ApiGETCollections {
     String collectionId = "1f361abf-49c1-4765-a3f9-bf1addc64615";
 
     @BeforeMethod
-    public void url(){
+    public static void url(){
         RestAssured.baseURI = "https://api.getpostman.com/collections/";
     }
 

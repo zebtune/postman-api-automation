@@ -1,5 +1,6 @@
 package com.main;
 
+import com.scripts.NegativeCases;
 import org.testng.TestNG;
 import com.scripts.ApiGETCollections;
 import com.scripts.PostCollections;
@@ -11,7 +12,8 @@ public class TestRunner{
         testNG = new TestNG();
         testNG.setTestClasses(new Class[] {
                 ApiGETCollections.class,
-                PostCollections.class});
+                PostCollections.class,
+                NegativeCases.class});
         testNG.run();
     }
 }

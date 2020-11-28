@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,7 +112,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.scripts.NegativeCases" class="method navigator-link" hash-for-method="invalidSearch">invalidSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.scripts.PostCollections" class="method navigator-link" hash-for-method="postCollections">postCollections</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.scripts.NegativeCases" class="method navigator-link" hash-for-method="postEmptyBody">postEmptyBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.scripts.NegativeCases" class="method navigator-link" hash-for-method="unauthorizedGetRequest">unauthorizedGetRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -127,6 +142,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.scripts.NegativeCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearch">
+                  </a> <!-- invalidSearch -->
+                  <span class="method-name">invalidSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postEmptyBody">
+                  </a> <!-- postEmptyBody -->
+                  <span class="method-name">postEmptyBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unauthorizedGetRequest">
+                  </a> <!-- unauthorizedGetRequest -->
+                  <span class="method-name">unauthorizedGetRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -177,6 +221,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.scripts.ApiGETCollections&quot;/&gt;
       &lt;class name=&quot;com.scripts.PostCollections&quot;/&gt;
+      &lt;class name=&quot;com.scripts.NegativeCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -190,7 +235,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,24 +261,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getCollectionAll')
 data.setCell(0, 2, 'com.scripts.ApiGETCollections')
-data.setCell(0, 3, 4949);
+data.setCell(0, 3, 4671);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'postCollections')
 data.setCell(1, 2, 'com.scripts.PostCollections')
-data.setCell(1, 3, 3992);
+data.setCell(1, 3, 4433);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getCollectionSingle')
 data.setCell(2, 2, 'com.scripts.ApiGETCollections')
-data.setCell(2, 3, 3183);
+data.setCell(2, 3, 2812);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidSearch')
+data.setCell(3, 2, 'com.scripts.NegativeCases')
+data.setCell(3, 3, 947);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'postEmptyBody')
+data.setCell(4, 2, 'com.scripts.NegativeCases')
+data.setCell(4, 3, 854);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'unauthorizedGetRequest')
+data.setCell(5, 2, 'com.scripts.NegativeCases')
+data.setCell(5, 3, 778);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -266,22 +323,37 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getCollectionAll</span>
-                <span class="method-start">2784 ms</span>
+                <span class="method-start">2734 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">url</span>
-                <span class="method-start">7748 ms</span>
+                <span class="method-start">7405 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getCollectionSingle</span>
-                <span class="method-start">7748 ms</span>
+                <span class="method-start">7405 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.scripts.PostCollections</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">postCollections</span>
-                <span class="method-start">10940 ms</span>
+                <span class="method-start">10217 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.scripts.NegativeCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidSearch</span>
+                <span class="method-start">14651 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postEmptyBody</span>
+                <span class="method-start">15598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">unauthorizedGetRequest</span>
+                <span class="method-start">16453 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
