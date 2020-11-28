@@ -1,11 +1,13 @@
 package com.auth;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ApiKey {
+
+    public static String keyName;
+    public static String keyValue;
 
     public static String getKeyName() throws IOException {
         Properties prop = new Properties();
@@ -26,9 +28,6 @@ public class ApiKey {
 
         return value;
     }
-
-    public static String keyName;
-    public static String keyValue;
 
     static {
         try {

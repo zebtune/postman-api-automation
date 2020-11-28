@@ -9,7 +9,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import com.auth.*;
 
-import java.io.IOException;
 
 public class ApiGETCollections {
     int statusCode;
@@ -32,6 +31,7 @@ public class ApiGETCollections {
 
         System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
         System.out.println("Response Body: " + response.getBody().prettyPrint());
+
         Assert.assertEquals(statusCode, 200);
     }
 

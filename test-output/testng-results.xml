@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T09:02:58 CET" name="Command line suite" finished-at="2020-11-27T09:03:10 CET" duration-ms="12099">
+  <suite started-at="2020-11-28T02:29:02 CET" name="Command line suite" finished-at="2020-11-28T02:29:17 CET" duration-ms="15044">
     <groups>
     </groups>
-    <test started-at="2020-11-27T09:02:58 CET" name="Command line test" finished-at="2020-11-27T09:03:10 CET" duration-ms="12099">
+    <test started-at="2020-11-28T02:29:02 CET" name="Command line test" finished-at="2020-11-28T02:29:17 CET" duration-ms="15044">
       <class name="com.scripts.PostCollections">
-        <test-method signature="postCollection()[pri:0, instance:com.scripts.PostCollections@35d176f7]" started-at="2020-11-27T09:03:09 CET" name="postCollection" finished-at="2020-11-27T09:03:10 CET" duration-ms="1389" status="PASS">
+        <test-method signature="postCollections()[pri:0, instance:com.scripts.PostCollections@35d176f7]" started-at="2020-11-28T02:29:13 CET" name="postCollections" finished-at="2020-11-28T02:29:17 CET" duration-ms="3992" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCollection -->
+        </test-method> <!-- postCollections -->
       </class> <!-- com.scripts.PostCollections -->
       <class name="com.scripts.ApiGETCollections">
-        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-27T09:02:58 CET" name="url" finished-at="2020-11-27T09:03:01 CET" duration-ms="2637" status="PASS">
+        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-28T02:29:02 CET" name="url" finished-at="2020-11-28T02:29:05 CET" duration-ms="2784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method signature="getCollectionAll()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-27T09:03:01 CET" name="getCollectionAll" finished-at="2020-11-27T09:03:06 CET" duration-ms="4583" status="PASS">
+        <test-method signature="getCollectionAll()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-28T02:29:05 CET" name="getCollectionAll" finished-at="2020-11-28T02:29:10 CET" duration-ms="4949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCollectionAll -->
-        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-27T09:03:06 CET" name="url" finished-at="2020-11-27T09:03:06 CET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-28T02:29:10 CET" name="url" finished-at="2020-11-28T02:29:10 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method signature="getCollectionSingle()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-27T09:03:06 CET" name="getCollectionSingle" finished-at="2020-11-27T09:03:09 CET" duration-ms="3352" status="PASS">
+        <test-method signature="getCollectionSingle()[pri:0, instance:com.scripts.ApiGETCollections@551aa95a]" started-at="2020-11-28T02:29:10 CET" name="getCollectionSingle" finished-at="2020-11-28T02:29:13 CET" duration-ms="3183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCollectionSingle -->
