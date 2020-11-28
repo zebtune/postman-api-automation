@@ -10,12 +10,12 @@ import io.restassured.response.Response;
 import com.auth.*;
 
 
-public class ApiGETCollections {
+public class GetCollections {
     int statusCode;
-    String collectionId = "1f361abf-49c1-4765-a3f9-bf1addc64615";
 
     @BeforeMethod
     public static void url(){
+        //setting a base method that will be used in different classes
         RestAssured.baseURI = "https://api.getpostman.com/collections/";
     }
 
@@ -30,6 +30,7 @@ public class ApiGETCollections {
         statusCode = response.getStatusCode();
 
         System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
+        //Using pretty print to get original form of response
         System.out.println("Response Body: " + response.getBody().prettyPrint());
 
         Assert.assertEquals(statusCode, 200);
@@ -37,6 +38,9 @@ public class ApiGETCollections {
 
     @Test
     public void getCollectionSingle(){
+        //using id from existing collection
+        String collectionId = "1f361abf-49c1-4765-a3f9-bf1addc64615";
+
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")

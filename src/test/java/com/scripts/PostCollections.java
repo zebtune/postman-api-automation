@@ -1,8 +1,6 @@
 package com.scripts;
 
 import com.github.javafaker.Faker;
-import com.github.javafaker.service.FakeValuesService;
-import com.github.javafaker.service.RandomService;
 import io.restassured.http.Method;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
@@ -11,7 +9,6 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import com.auth.*;
 
-import java.util.Locale;
 
 
 public class PostCollections {
@@ -19,23 +16,13 @@ public class PostCollections {
     public void postCollections() {
         //Faker for random generated data
         Faker faker = new Faker();
-        FakeValuesService fakeValuesService = new FakeValuesService(
-                new Locale("en-GB"), new RandomService());
 
-        ApiGETCollections.url();
+        GetCollections.url();
         String collectionName = " ";
 
         for (int i = 0; i < 3; i++) {
-
-            if (i == 0){
-                collectionName = faker.country().name();
-            }
-            if (i == 1){
-                collectionName = faker.country().name();
-            }
-            if (i == 2){
-                collectionName = faker.country().name();
-            }
+            //Each iteration will have a different country name
+            collectionName = faker.country().name();
 
             RequestSpecification request = RestAssured.given();
             Response response = request.given()

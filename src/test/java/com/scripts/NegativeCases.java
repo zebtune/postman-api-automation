@@ -9,22 +9,20 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class NegativeCases {
-    //1. Try to send unauthorized request
-    //2. Try to search invalid id
-    //3. Try to post with invalid body
-    //4.
+    int statusCode;
+    String errorName;
 
     @Test
-    public void unauthorizedGetRequest() {
-        String errorName = "AuthenticationError";
+    public void unauthorizedGetRequest() {  //Sending request without API key
+        errorName = "AuthenticationError";
 
-        ApiGETCollections.url();
+        GetCollections.url();
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")
                 .request(Method.GET);
 
-        int statusCode = response.getStatusCode();
+        statusCode = response.getStatusCode();
 
         System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
         System.out.println("Response Body: " + response.getBody().prettyPrint());
@@ -34,18 +32,18 @@ public class NegativeCases {
     }
 
     @Test
-    public void invalidSearch() {
-        String id = "invalidId-147896";
-        String errorName = "instanceNotFoundError";
+    public void invalidSearch() {   //Sendin invalid collection id request
+        String invalidId = "invalidId-147896";
+        errorName = "instanceNotFoundError";
 
-        ApiGETCollections.url();
+        GetCollections.url();
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")
                 .header(ApiKey.keyName, ApiKey.keyValue)
-                .request(Method.GET, id);
+                .request(Method.GET, invalidId);
 
-        int statusCode = response.getStatusCode();
+        statusCode = response.getStatusCode();
 
         System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
         System.out.println("Response Body: " + response.getBody().prettyPrint());
@@ -55,10 +53,10 @@ public class NegativeCases {
     }
 
     @Test
-    public void postEmptyBody() {
-        String errorName = "paramMissingError";
+    public void postEmptyBody() {   //Creating collection with empty body
+        errorName = "paramMissingError";
 
-        ApiGETCollections.url();
+        GetCollections.url();
 
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
@@ -67,7 +65,7 @@ public class NegativeCases {
                 .body("")
                 .request(Method.POST);
 
-        int statusCode = response.getStatusCode();
+        statusCode = response.getStatusCode();
 
         System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
         System.out.println("Response Body: " + response.getBody().prettyPrint());

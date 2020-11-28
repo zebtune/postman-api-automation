@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ApiKey {
-
     public static String keyName;
     public static String keyValue;
 
