@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.auth.*;
 
 public class NegativeCases {
+
     int statusCode;
     String errorName;
 

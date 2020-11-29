@@ -9,8 +9,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import com.auth.*;
 
-
 public class GetCollections {
+
     int statusCode;
 
     @BeforeMethod
@@ -33,7 +33,6 @@ public class GetCollections {
 
         Assert.assertEquals(statusCode, 200);
     }
-
 
     @Test(testName="GET single collection")
     public void getCollectionSingle() {

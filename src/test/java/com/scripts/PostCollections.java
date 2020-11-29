@@ -9,9 +9,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import com.auth.*;
 
-
-
 public class PostCollections {
+
     @Test(testName="POST collections")
     public void postCollections() {
         //Faker for random generated data

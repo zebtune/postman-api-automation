@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="18.894" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.382" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\zeb\.jdks\openjdk-15.0.1-1\bin"/>
-    <property name="sun.java.command" value="C:\Users\zeb\AppData\Local\Temp\surefire6995052258482960534\surefirebooter16757384384311103580.jar C:\Users\zeb\AppData\Local\Temp\surefire6995052258482960534 2020-11-29T21-32-50_523-jvmRun1 surefire13263153548763876628tmp surefire_010813285438418660295tmp"/>
+    <property name="sun.java.command" value="C:\Users\zeb\AppData\Local\Temp\surefire418627917316589774\surefirebooter16255070555022103690.jar C:\Users\zeb\AppData\Local\Temp\surefire418627917316589774 2020-11-30T00-17-37_894-jvmRun1 surefire4004330582595489853tmp surefire_015237833651896363062tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\zeb\IdeaProjects\postman-api-automation\target\test-classes;C:\Users\zeb\IdeaProjects\postman-api-automation\target\classes;C:\Users\zeb\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\zeb\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\zeb\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\zeb\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\zeb\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\zeb\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\zeb\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\zeb\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\zeb\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\zeb\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\zeb\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\zeb\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\zeb\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\zeb\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\zeb\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\zeb\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\zeb\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\zeb\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\zeb\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\zeb\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\zeb\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\zeb\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\zeb\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\zeb\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\zeb\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\zeb\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\zeb\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\zeb\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\zeb\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\zeb\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\zeb\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\zeb\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\zeb\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\zeb\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\zeb\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\zeb\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\zeb\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\zeb\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\zeb\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\zeb\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\zeb\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\zeb\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\zeb\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\zeb\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\zeb\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\zeb\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\zeb\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\zeb\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\zeb\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\zeb\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\zeb\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\zeb\AppData\Local\Temp\surefire6995052258482960534\surefirebooter16757384384311103580.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\zeb\AppData\Local\Temp\surefire418627917316589774\surefirebooter16255070555022103690.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -55,30 +55,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="getCollectionAll" classname="com.scripts.GetCollections" time="3.875">
+  <testcase name="getCollectionAll" classname="com.scripts.GetCollections" time="4.481">
     <system-out><![CDATA[Get All Collections | HTTP Status Code: 200 HTTP/1.1 200 OK
 ]]></system-out>
   </testcase>
-  <testcase name="getCollectionSingle" classname="com.scripts.GetCollections" time="4.863">
+  <testcase name="getCollectionSingle" classname="com.scripts.GetCollections" time="4.127">
     <system-out><![CDATA[Get Single Collection | HTTP Status Code: 200 HTTP/1.1 200 OK
 ]]></system-out>
   </testcase>
-  <testcase name="unauthorizedGetRequest" classname="com.scripts.NegativeCases" time="0.875">
+  <testcase name="unauthorizedGetRequest" classname="com.scripts.NegativeCases" time="0.959">
     <system-out><![CDATA[Unauthorized Request | HTTP Status Code: 401 HTTP/1.1 401 Unauthorized
 ]]></system-out>
   </testcase>
-  <testcase name="invalidSearch" classname="com.scripts.NegativeCases" time="0.953">
+  <testcase name="invalidSearch" classname="com.scripts.NegativeCases" time="1.017">
     <system-out><![CDATA[Invalid Search | HTTP Status Code: 404 HTTP/1.1 404 Not Found
 ]]></system-out>
   </testcase>
-  <testcase name="postEmptyBody" classname="com.scripts.NegativeCases" time="1.016">
+  <testcase name="postEmptyBody" classname="com.scripts.NegativeCases" time="1.174">
     <system-out><![CDATA[Empty Body HTTP | Status Code: 400 HTTP/1.1 400 Bad Request
 ]]></system-out>
   </testcase>
-  <testcase name="postCollections" classname="com.scripts.PostCollections" time="4.14">
-    <system-out><![CDATA[Post Collection New Zealand | HTTP Status Code: 200 HTTP/1.1 200 OK
-Post Collection Botswana | HTTP Status Code: 200 HTTP/1.1 200 OK
-Post Collection Morocco | HTTP Status Code: 200 HTTP/1.1 200 OK
+  <testcase name="postCollections" classname="com.scripts.PostCollections" time="4.309">
+    <system-out><![CDATA[Post Collection Saudi Arabia | HTTP Status Code: 200 HTTP/1.1 200 OK
+Post Collection Libya | HTTP Status Code: 200 HTTP/1.1 200 OK
+Post Collection South Sudan | HTTP Status Code: 200 HTTP/1.1 200 OK
 ]]></system-out>
   </testcase>
 </testsuite>
