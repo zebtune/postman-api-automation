@@ -1,9 +1,7 @@
 package com.main;
 
-import com.scripts.GetCollections;
-import com.scripts.NegativeCases;
+import com.scripts.*;
 import org.testng.TestNG;
-import com.scripts.PostCollections;
 
 public class TestRunner{
     static TestNG testNG;

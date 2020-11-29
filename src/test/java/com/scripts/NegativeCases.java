@@ -1,12 +1,12 @@
 package com.scripts;
 
-import com.auth.ApiKey;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.auth.*;
 
 public class NegativeCases {
     int statusCode;
