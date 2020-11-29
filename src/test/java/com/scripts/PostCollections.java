@@ -21,7 +21,7 @@ public class PostCollections {
         String collectionName = " ";
 
         for (int i = 0; i < 3; i++) {
-            //Each iteration will give collection a country name
+            //Each iteration will create a collection with a random country name
             collectionName = faker.country().name();
 
             RequestSpecification request = RestAssured.given();
