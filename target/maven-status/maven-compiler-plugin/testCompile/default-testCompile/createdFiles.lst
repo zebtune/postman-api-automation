@@ -1,0 +1,5 @@
+com\auth\ApiKey.class
+com\scripts\GetCollections.class
+com\main\TestRunner.class
+com\scripts\PostCollections.class
+com\scripts\NegativeCases.class

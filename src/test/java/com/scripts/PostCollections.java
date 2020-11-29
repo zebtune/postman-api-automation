@@ -32,7 +32,7 @@ public class PostCollections {
                     .request(Method.POST);
 
             int statusCode = response.getStatusCode();
-            System.out.println("Post Collection | HTTP Status Code: " + statusCode + " " + response.statusLine());
+            System.out.println("Post Collection " + collectionName + " | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
             Assert.assertEquals(statusCode, 200);
             Assert.assertEquals(response.path("collection.name"), collectionName);
