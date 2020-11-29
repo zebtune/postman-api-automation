@@ -12,7 +12,7 @@ public class NegativeCases {
     int statusCode;
     String errorName;
 
-    @Test
+    @Test(testName="Unauthorized request")
     public void unauthorizedGetRequest() {  //Sending request without API key
         errorName = "AuthenticationError";
 
@@ -24,14 +24,13 @@ public class NegativeCases {
 
         statusCode = response.getStatusCode();
 
-        System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-        System.out.println("Response Body: " + response.getBody().prettyPrint());
+        System.out.println("Unauthorized Request | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
         Assert.assertEquals(statusCode, 401);
         Assert.assertEquals(response.path("error.name"), errorName);
     }
 
-    @Test
+    @Test(testName="Invalid id search")
     public void invalidSearch() {   //Sendin invalid collection id request
         String invalidId = "invalidId-147896";
         errorName = "instanceNotFoundError";
@@ -45,14 +44,13 @@ public class NegativeCases {
 
         statusCode = response.getStatusCode();
 
-        System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-        System.out.println("Response Body: " + response.getBody().prettyPrint());
+        System.out.println("Invalid Search | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
         Assert.assertEquals(statusCode, 404);
         Assert.assertEquals(response.path("error.name"), errorName);
     }
 
-    @Test
+    @Test(testName="Empty body POST request")
     public void postEmptyBody() {   //Creating collection with empty body
         errorName = "paramMissingError";
 
@@ -67,8 +65,7 @@ public class NegativeCases {
 
         statusCode = response.getStatusCode();
 
-        System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-        System.out.println("Response Body: " + response.getBody().prettyPrint());
+        System.out.println("Empty Body HTTP | Status Code: " + statusCode + " " + response.statusLine());
 
         Assert.assertEquals(statusCode, 400);
         Assert.assertEquals(response.path("error.name"), errorName);

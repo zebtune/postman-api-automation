@@ -19,8 +19,8 @@ public class GetCollections {
         RestAssured.baseURI = "https://api.getpostman.com/collections/";
     }
 
-    @Test
-    public void getCollectionAll(){
+    @Test(testName="GET all collections")
+    public void getCollectionAll() {
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
                 .header("Content-Type", "application/json")
@@ -29,17 +29,16 @@ public class GetCollections {
 
         statusCode = response.getStatusCode();
 
-        System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-        //Using pretty print to get original form of response
-        System.out.println("Response Body: " + response.getBody().prettyPrint());
+        System.out.println("Get All Collections | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
         Assert.assertEquals(statusCode, 200);
     }
 
-    @Test
-    public void getCollectionSingle(){
-        //using id from existing collection
-        String collectionId = "1f361abf-49c1-4765-a3f9-bf1addc64615";
+
+    @Test(testName="GET single collection")
+    public void getCollectionSingle() {
+        //using method for extracting id from response
+        String collectionId = getCollectionId();
 
         RequestSpecification request = RestAssured.given();
         Response response = request.given()
@@ -49,10 +48,21 @@ public class GetCollections {
 
         statusCode = response.getStatusCode();
 
-        System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-        System.out.println("Response Body: " + response.getBody().prettyPrint());
+        System.out.println("Get Single Collection | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
         Assert.assertEquals(statusCode, 200);
         Assert.assertEquals(response.path("collection.info._postman_id"), collectionId);
+    }
+
+    public String getCollectionId() {
+        RequestSpecification request = RestAssured.given();
+        Response response = request.given()
+                .header("Content-Type", "application/json")
+                .header(ApiKey.keyName, ApiKey.keyValue)
+                .request(Method.GET);
+
+        String collectionId = response.jsonPath().getString("collections[0].id");
+
+        return collectionId;
     }
 }

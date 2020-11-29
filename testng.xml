@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/zeb/IdeaProjects/softray-automation-task">
+        <classes>
+            <class name="com.scripts.GetCollections">
+                <methods>
+                    <include name="getCollectionAll"/>
+                    <include name="getCollectionSingle"/>
+                </methods>
+            </class>
+            <class name="com.scripts.NegativeCases">
+                <methods>
+                    <include name="unauthorizedGetRequest"/>
+                    <include name="invalidSearch"/>
+                    <include name="postEmptyBody"/>
+                </methods>
+            </class>
+            <class name="com.scripts.PostCollections">
+                <methods>
+                    <include name="postCollections"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

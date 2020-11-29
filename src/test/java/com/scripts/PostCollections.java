@@ -12,7 +12,7 @@ import com.auth.*;
 
 
 public class PostCollections {
-    @Test
+    @Test(testName="POST collections")
     public void postCollections() {
         //Faker for random generated data
         Faker faker = new Faker();
@@ -21,7 +21,7 @@ public class PostCollections {
         String collectionName = " ";
 
         for (int i = 0; i < 3; i++) {
-            //Each iteration will have a different country name
+            //Each iteration will give collection a country name
             collectionName = faker.country().name();
 
             RequestSpecification request = RestAssured.given();
@@ -32,8 +32,7 @@ public class PostCollections {
                     .request(Method.POST);
 
             int statusCode = response.getStatusCode();
-            System.out.println("HTTP Status Code: " + statusCode + " " + response.statusLine());
-            System.out.println("Response Body: " + response.getBody().prettyPrint());
+            System.out.println("Post Collection | HTTP Status Code: " + statusCode + " " + response.statusLine());
 
             Assert.assertEquals(statusCode, 200);
             Assert.assertEquals(response.path("collection.name"), collectionName);
