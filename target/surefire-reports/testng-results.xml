@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-29T14:16:41 CET" name="com.main.TestRunner" finished-at="2020-11-29T14:16:41 CET" duration-ms="26">
+  <suite started-at="2020-11-29T21:33:02 CET" name="All Test Suite" finished-at="2020-11-29T21:33:20 CET" duration-ms="17628">
     <groups>
     </groups>
-    <test started-at="2020-11-29T14:16:41 CET" name="Command line test" finished-at="2020-11-29T14:16:41 CET" duration-ms="26">
-    </test> <!-- Command line test -->
-  </suite> <!-- com.main.TestRunner -->
+    <test started-at="2020-11-29T21:33:02 CET" name="C:/Users/zeb/IdeaProjects/softray-automation-task" finished-at="2020-11-29T21:33:20 CET" duration-ms="17628">
+      <class name="com.scripts.PostCollections">
+        <test-method signature="postCollections()[pri:0, instance:com.scripts.PostCollections@1198b989]" started-at="2020-11-29T21:33:16 CET" name="postCollections" finished-at="2020-11-29T21:33:20 CET" duration-ms="4124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCollections -->
+      </class> <!-- com.scripts.PostCollections -->
+      <class name="com.scripts.GetCollections">
+        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.GetCollections@2cbb3d47]" started-at="2020-11-29T21:33:02 CET" name="url" finished-at="2020-11-29T21:33:04 CET" duration-ms="1844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="getCollectionAll()[pri:0, instance:com.scripts.GetCollections@2cbb3d47]" started-at="2020-11-29T21:33:04 CET" name="getCollectionAll" finished-at="2020-11-29T21:33:08 CET" duration-ms="3843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionAll -->
+        <test-method is-config="true" signature="url()[pri:0, instance:com.scripts.GetCollections@2cbb3d47]" started-at="2020-11-29T21:33:08 CET" name="url" finished-at="2020-11-29T21:33:08 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="getCollectionSingle()[pri:0, instance:com.scripts.GetCollections@2cbb3d47]" started-at="2020-11-29T21:33:08 CET" name="getCollectionSingle" finished-at="2020-11-29T21:33:13 CET" duration-ms="4879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCollectionSingle -->
+      </class> <!-- com.scripts.GetCollections -->
+      <class name="com.scripts.NegativeCases">
+        <test-method signature="unauthorizedGetRequest()[pri:0, instance:com.scripts.NegativeCases@527e5409]" started-at="2020-11-29T21:33:13 CET" name="unauthorizedGetRequest" finished-at="2020-11-29T21:33:14 CET" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unauthorizedGetRequest -->
+        <test-method signature="invalidSearch()[pri:0, instance:com.scripts.NegativeCases@527e5409]" started-at="2020-11-29T21:33:14 CET" name="invalidSearch" finished-at="2020-11-29T21:33:15 CET" duration-ms="969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method signature="postEmptyBody()[pri:0, instance:com.scripts.NegativeCases@527e5409]" started-at="2020-11-29T21:33:15 CET" name="postEmptyBody" finished-at="2020-11-29T21:33:16 CET" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postEmptyBody -->
+      </class> <!-- com.scripts.NegativeCases -->
+    </test> <!-- C:/Users/zeb/IdeaProjects/softray-automation-task -->
+  </suite> <!-- All Test Suite -->
 </testng-results>
