@@ -13,7 +13,7 @@ Since the project is created with Maven, all of the libraries/dependencies are i
 - REST Assured 4.3.0 
 
 ## Running the Test
-#### 1. Inside Intellij (or Eclipse)
+#### 1. With Intellij (or Eclipse)
 The first way of running the test is inside IDE (preferably in Intellij) just by running the main class or method which you can find in 	***src/test/java/com/main/TestRunner.java.*** The main method will trigger all other test classes ***(src/test/java/com/scripts/)*** using TestNG. 
 #### 2. With Maven
 The second way of running the test is with Maven (assuming you have Maven set up on your machine) with Mavens Surefire plugin that is included in pom.xml. The test will get triggered through generated  testng.xml file. By using the terminal (or command prompt on Windows), navigate to project directory and type in:
